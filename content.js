@@ -19,6 +19,7 @@ function injectTarget(el, opt) {
 	var label = opt.label || '_blank';
 	if(el.target != label){
 		el.target = label;
+		el.dataset.newtab = true;
 	}
 }
 
